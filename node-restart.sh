@@ -185,6 +185,8 @@ spec:
       tolerations:
       - effect: NoSchedule
         operator: Exists
+      - effect: NoExecute
+        operator: Exists
       containers:
       - name: $pod
         image: $image
